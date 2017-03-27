@@ -1,0 +1,286 @@
+body {
+  font-family: "Lato", sans-serif;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center; }
+
+.main-card {
+  background: white;
+  margin: auto;
+  z-index: 3;
+  position: fixed;
+  border: 7px solid #e0e0e0;
+  height: 1400px;
+  width: 84%; }
+@keyframes swipeRight {
+  0% {
+    transform: translateX(0%); }
+  99% {
+    opacity: 100%; }
+  100% {
+    transform: translateX(100%);
+    opacity: 0%; } }
+@keyframes swipeLeft {
+  0% {
+    transform: translateX(0%); }
+  99% {
+    opacity: 100%; }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0%; } }
+@keyframes goBack {
+  0% {
+    top: 180px;
+    margin-left: 11px;
+    left: 62px;
+    height: 1350px;
+    width: 81%;
+    opacity: 100%; }
+  100% {
+    top: 108px;
+    margin-left: 0px;
+    left: 58px;
+    height: 1400px;
+    width: 84%;
+    opacity: 100%; } }
+  .main-card > .container {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 90%;
+    height: 95%; }
+    .main-card > .container > .avatar {
+      background: url(../imgs/dinner.png);
+      background-size: 280px 280px;
+      background-repeat: no-repeat;
+      height: 280px;
+      width: 280px;
+      border: 10px solid #e0e0e0;
+      border-radius: 50%;
+      margin: auto;
+        margin-top: 40px; }
+    .main-card > .container > h3.name {
+      padding: 15px;
+        padding-bottom: 5px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: "Baloo+Bhaina", sans-serif;
+      color: #494949;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    .main-card > .container > span.description {
+      font-size: 33px;
+      font-weight: 300;
+      color: rgba(73, 73, 73, 0.8);
+      margin: 0;
+      display: block;
+      padding: 10px 18px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    .main-card > .container > div.information {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      height: 350px;
+      vertical-align: middle;
+      overflow: hidden;
+      box-sizing: border-box; }
+      .main-card > .container > div.information > p {
+        margin: auto;
+          margin-left: 27px;
+        padding: 0;
+          padding-top: 25px;
+          padding-bottom: 25px;
+        font-size: 35px;
+        line-height: 60px;
+        color: #494949;
+        text-align: left;
+        font-family: "Baloo+Bhaina", sans-serif;
+        font-weight: 600;
+        border-top: 1px solid #b4b4b4; }
+        .main-card > .container > div.information > p > span {
+          float: right;
+          vertical-align: top;
+          font-family: "Lato", sans-serif;
+          font-weight: 300; }
+          .main-card > .container > div.information > p > span > strong {
+            font-size: 60px;
+            vertical-align: top;
+            font-family: "Baloo+Bhaina", sans-serif;
+            font-weight: 800; }
+        .main-card > .container > div.information > p.job-success {
+          border-bottom: 1px solid #b4b4b4; }
+    .main-card > .container > div.skill-tags {
+      margin: auto;
+        margin-bottom: 40px;
+      padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+      overflow: hidden;
+      height: 200px;
+      text-align: center; }
+      .main-card > .container > div.skill-tags > span.tags {
+        background: #e0e0e0;
+        color: #494949;
+        display: inline-block;
+        border-radius: 8px;
+        font-size: 30px;
+        padding: 10px 25px;
+        margin: auto;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        font-family: "Lato", sans-serif; }
+    .main-card > .container > a.btn-view {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 35px;
+      text-decoration: none;
+      color: #37a000;
+      background: transparent;
+      min-width: 500px;
+      width: auto;
+      line-height: 1;
+      padding: 30px 150px;
+      border: 3px solid #b4b4b4;
+      border-radius: 8px;
+      margin-bottom: 0;
+      text-align: center;
+      vertical-align: middle;
+      background-image: none; }
+
+.card-under1 {
+  z-index: 2;
+  background: white;
+  margin: auto;
+  margin-left: 11px;
+  position: fixed;
+  top: 180px;
+  left: 62px;
+  border: 7px solid #e0e0e0;
+  height: 1350px;
+  width: 81%; }
+  .card-under1 > .container {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 90%;
+    height: 95%; }
+    .card-under1 > .container > .avatar {
+      background: url(../imgs/coffe.png);
+      background-size: 280px 280px;
+      background-repeat: no-repeat;
+      height: 280px;
+      width: 280px;
+      border: 10px solid #e0e0e0;
+      border-radius: 50%;
+      margin: auto;
+        margin-top: 40px; }
+    .card-under1 > .container > h3.name {
+      padding: 15px;
+        padding-bottom: 5px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: "Baloo+Bhaina", sans-serif;
+      color: #494949;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    .card-under1 > .container > span.description {
+      font-size: 33px;
+      font-weight: 300;
+      color: rgba(73, 73, 73, 0.8);
+      margin: 0;
+      display: block;
+      padding: 10px 18px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    .card-under1 > .container > div.information {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      height: 350px;
+      vertical-align: middle;
+      overflow: hidden;
+      box-sizing: border-box; }
+      .card-under1 > .container > div.information > p {
+        margin: auto;
+          margin-left: 27px;
+        padding: 0;
+          padding-top: 25px;
+          padding-bottom: 25px;
+        font-size: 35px;
+        line-height: 60px;
+        color: #494949;
+        text-align: left;
+        font-family: "Baloo+Bhaina", sans-serif;
+        font-weight: 600;
+        border-top: 1px solid #b4b4b4; }
+        .card-under1 > .container > div.information > p > span {
+          float: right;
+          vertical-align: top;
+          font-family: "Lato", sans-serif;
+          font-weight: 300; }
+          .card-under1 > .container > div.information > p > span > strong {
+            font-size: 60px;
+            vertical-align: top;
+            font-family: "Baloo+Bhaina", sans-serif;
+            font-weight: 800; }
+        .card-under1 > .container > div.information > p.job-success {
+          border-bottom: 1px solid #b4b4b4; }
+    .card-under1 > .container > div.skill-tags {
+      margin: auto;
+        margin-bottom: 40px;
+      padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+      overflow: hidden;
+      height: 200px;
+      text-align: center; }
+      .card-under1 > .container > div.skill-tags > span.tags {
+        background: #e0e0e0;
+        color: #494949;
+        display: inline-block;
+        border-radius: 8px;
+        font-size: 30px;
+        padding: 10px 25px;
+        margin: auto;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        font-family: "Lato", sans-serif; }
+    .card-under1 > .container > a.btn-view {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 35px;
+      text-decoration: none;
+      color: #37a000;
+      background: transparent;
+      min-width: 500px;
+      width: auto;
+      line-height: 1;
+      padding: 30px 150px;
+      border: 3px solid #b4b4b4;
+      border-radius: 8px;
+      margin-bottom: 0;
+      text-align: center;
+      vertical-align: middle;
+      background-image: none; }
+
+.card-under2 {
+  z-index: 1;
+  background: white;
+  margin: auto;
+  margin-left: 11px;
+  position: fixed;
+  top: 350px;
+  left: 77px;
+  border: 7px solid #e0e0e0;
+  height: 1200px;
+  width: 78%; }
+
+/*# sourceMappingURL=app.css.map */

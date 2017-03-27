@@ -1,0 +1,325 @@
+body
+	font-family: 'Lato', sans-serif
+	padding:
+		top: 100px
+		left: 50px
+		right: 50px
+	text-align: center
+
+	overflow:hidden
+
+
+.main-card
+	background: white
+	// display: none
+	margin: auto
+	z-index: 3
+	position: fixed
+	border: 7px solid rgba(224,224,224,1)
+	height: 1400px
+	width: 84%
+
+
+	@keyframes swipeRight
+		0%
+			transform: translateX(0%)
+		99%
+			opacity: 100%
+		100%
+			transform: translateX(100%)
+			opacity: 0%
+	@keyframes swipeLeft
+		0%
+			transform: translateX(0%)
+		99%
+			opacity: 100%
+		100%
+			transform: translateX(-100%)
+			opacity: 0%
+	
+	@keyframes goBack
+		0%
+			top: 180px
+			margin-left: 11px
+			left: 62px
+			height: 1350px
+			width: 81%
+			opacity: 100%			
+		100%
+			top: 108px
+			margin-left: 0px
+			left: 58px
+			height: 1400px
+			width: 84%
+			opacity: 100%
+	
+
+
+
+
+	& > .container
+		position: absolute
+		top: 2%
+		left: 4%
+		width: 90%
+		height: 95%
+
+		& > .avatar
+			background: url(../imgs/dinner.png)
+			background-size: 280px 280px
+			background-repeat: no-repeat
+			height: 280px
+			width: 280px
+			border: 10px solid rgba(224,224,224,1)
+			border-radius: 50%
+			margin: auto
+				top: 40px
+
+		& > h3.name
+			padding: 15px
+				bottom: 5px
+			margin-bottom: 0
+			text-transform: uppercase
+			font-size: 35px
+			font-weight: bold
+			font-family: 'Baloo+Bhaina', sans-serif
+			color: rgba(73,73,73,1)
+			overflow: hidden
+			white-space: nowrap
+			text-overflow: ellipsis
+			
+
+		& > span.description
+			font-size: 33px
+			font-weight: 300
+			color: rgba(73,73,73,0.8)
+			margin: 0
+			display: block
+			padding: 10px 18px
+			text-overflow: ellipsis
+			white-space: nowrap
+			overflow: hidden
+		
+		& > div.information
+			margin:
+				top: 30px
+				bottom: 50px
+			height: 350px
+			vertical-align: middle
+			overflow: hidden
+			box-sizing: border-box
+
+			& > p
+				margin: auto
+					left: 27px
+				padding: 0
+					top: 25px
+					bottom: 25px
+				font-size: 35px
+				line-height: 60px
+				color: rgba(73,73,73,1)
+				text-align: left
+				font-family: 'Baloo+Bhaina', sans-serif
+				font-weight: 600
+				border-top: 1px solid rgba(180,180,180,1)
+
+				& > span
+					float: right
+					vertical-align: top
+					font-family: 'Lato', sans-serif
+					font-weight: 300
+
+					& > strong
+						font-size: 60px
+						vertical-align: top
+						font-family: 'Baloo+Bhaina', sans-serif
+						font-weight: 800
+
+				&.job-success
+					border-bottom: 1px solid rgba(180,180,180,1)
+
+		& > div.skill-tags
+			margin: auto
+				bottom: 40px
+			padding: 0
+				left: 20px 
+				right: 20px
+			overflow: hidden
+			height: 200px
+			text-align: center
+
+			& > span.tags
+				background: rgba(224,224,224,1)
+				color: rgba(73,73,73, 1)
+				display: inline-block
+				border-radius: 8px
+				font-size: 30px
+				padding: 10px 25px
+				margin: auto
+					right: 20px
+					bottom: 20px
+				font-family: 'Lato', sans-serif
+
+		& > a.btn-view
+			font-family: 'Montserrat', sans-serif
+			font-weight: 900
+			font-size: 35px
+			text-decoration: none
+			color: rgba(55,160,0,1)
+			background: transparent
+			min-width: 500px
+			width: auto
+			line-height: 1
+			padding: 30px 150px
+			border: 3px solid rgba(180,180,180,1)
+			border-radius: 8px
+			margin-bottom: 0
+			text-align: center
+			vertical-align: middle
+			background-image: none
+
+.card-under1
+	z-index: 2
+	background: white
+	margin: auto
+	margin-left: 11px
+	position: fixed
+	top: 180px
+	left: 62px
+	border: 7px solid rgba(224,224,224,1)
+	height: 1350px
+	width: 81%
+
+	& > .container
+		position: absolute
+		top: 2%
+		left: 4%
+		width: 90%
+		height: 95%
+
+		& > .avatar
+			background: url(../imgs/coffe.png)
+			background-size: 280px 280px
+			background-repeat: no-repeat
+			height: 280px
+			width: 280px
+			border: 10px solid rgba(224,224,224,1)
+			border-radius: 50%
+			margin: auto
+				top: 40px
+
+		& > h3.name
+			padding: 15px
+				bottom: 5px
+			margin-bottom: 0
+			text-transform: uppercase
+			font-size: 35px
+			font-weight: bold
+			font-family: 'Baloo+Bhaina', sans-serif
+			color: rgba(73,73,73,1)
+			overflow: hidden
+			white-space: nowrap
+			text-overflow: ellipsis
+			
+
+		& > span.description
+			font-size: 33px
+			font-weight: 300
+			color: rgba(73,73,73,0.8)
+			margin: 0
+			display: block
+			padding: 10px 18px
+			text-overflow: ellipsis
+			white-space: nowrap
+			overflow: hidden
+		
+		& > div.information
+			margin:
+				top: 30px
+				bottom: 50px
+			height: 350px
+			vertical-align: middle
+			overflow: hidden
+			box-sizing: border-box
+
+			& > p
+				margin: auto
+					left: 27px
+				padding: 0
+					top: 25px
+					bottom: 25px
+				font-size: 35px
+				line-height: 60px
+				color: rgba(73,73,73,1)
+				text-align: left
+				font-family: 'Baloo+Bhaina', sans-serif
+				font-weight: 600
+				border-top: 1px solid rgba(180,180,180,1)
+
+				& > span
+					float: right
+					vertical-align: top
+					font-family: 'Lato', sans-serif
+					font-weight: 300
+
+					& > strong
+						font-size: 60px
+						vertical-align: top
+						font-family: 'Baloo+Bhaina', sans-serif
+						font-weight: 800
+
+				&.job-success
+					border-bottom: 1px solid rgba(180,180,180,1)
+
+		& > div.skill-tags
+			margin: auto
+				bottom: 40px
+			padding: 0
+				left: 20px 
+				right: 20px
+			overflow: hidden
+			height: 200px
+			text-align: center
+
+			& > span.tags
+				background: rgba(224,224,224,1)
+				color: rgba(73,73,73, 1)
+				display: inline-block
+				border-radius: 8px
+				font-size: 30px
+				padding: 10px 25px
+				margin: auto
+					right: 20px
+					bottom: 20px
+				font-family: 'Lato', sans-serif
+
+		& > a.btn-view
+			font-family: 'Montserrat', sans-serif
+			font-weight: 900
+			font-size: 35px
+			text-decoration: none
+			color: rgba(55,160,0,1)
+			background: transparent
+			min-width: 500px
+			width: auto
+			line-height: 1
+			padding: 30px 150px
+			border: 3px solid rgba(180,180,180,1)
+			border-radius: 8px
+			margin-bottom: 0
+			text-align: center
+			vertical-align: middle
+			background-image: none
+
+.card-under2
+	z-index: 1
+	background: white
+	margin: auto
+	margin-left: 11px
+	position: fixed
+	top: 350px
+	left: 77px
+	border: 7px solid rgba(224,224,224,1)
+	height: 1200px
+	width: 78%
+
