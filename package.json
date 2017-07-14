@@ -1,0 +1,25 @@
+{
+  "name": "near_app_mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start index.html"
+  },
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-material": "^1.1.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisaelMvM/cssTrainig.git"
+  },
+  "author": "Misael Virissimo de Moura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MisaelMvM/cssTrainig/issues"
+  },
+  "homepage": "https://github.com/MisaelMvM/cssTrainig#readme"
+}
